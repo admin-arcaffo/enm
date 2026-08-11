@@ -1,0 +1,10 @@
+.vercel
+.env*
+node_modules/
+dist/
+.DS_Store
+npm-debug.log*
+
+# Arquivos-fonte pesados não usados pelo site publicado
+public/_Assets/source/
+public/_Assets/*.mp4
