@@ -449,17 +449,13 @@ const App = () => {
 
       {/* Form Section - Centered for Mobile focus */}
       <Section id="form">
-        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+        <div className="form-section-inner">
           <FadeIn>
             <h2 className="section-title">Dê o próximo passo</h2>
-            <p className="section-subtitle" style={{ margin: '0 auto 48px' }}>
+            <p className="section-subtitle form-section-subtitle">
               Seja para uma imersão presencial ou um treinamento para sua equipe, preencha os dados e nosso time entrará em contato.
             </p>
-            <div className="glass" style={{
-              padding: 'clamp(20px, 5vw, 40px)', borderRadius: '24px',
-              background: 'rgba(255,255,255,0.01)', border: '1px solid rgba(255,255,255,0.05)',
-              textAlign: 'left'
-            }}>
+            <div className="glass form-panel">
               <ArcaffoForm />
             </div>
           </FadeIn>
