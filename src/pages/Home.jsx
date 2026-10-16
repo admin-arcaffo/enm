@@ -220,44 +220,104 @@ const App = () => {
         }} />
       </div>
 
-      {/* Navbar - Fixed Glass */}
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        style={{
-          position: 'fixed', top: 0, width: '100%', zIndex: 1000, height: '80px',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(15px)',
-          borderBottom: '1px solid rgba(255,255,255,0.05)'
-        }}
-      >
-        <div className="container nav-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <img src="/_Assets/Icon set.svg" alt="ENM" style={{ height: '18px' }} />
-            <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <div style={{ width: '1px', height: '16px', background: 'rgba(255,255,255,0.1)' }} />
-              <div style={{ display: 'flex', gap: '20px' }}>
-                <a href="#sobre" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase' }}>A ESCOLA</a>
-                <a href="#solucoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase' }}>FORMATOS</a>
-                <a href="#imersoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase' }}>PRÓXIMAS IMERSÕES</a>
-              </div>
-            </div>
+      {/* Floating Capsule Navbar (Advisor standard) */}
+      <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000, padding: '12px 16px 0', pointerEvents: 'none' }}>
+        <motion.nav
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          style={{
+            pointerEvents: 'auto',
+            maxWidth: '1280px',
+            margin: '0 auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '10px 24px',
+            borderRadius: '9999px',
+            background: 'rgba(0, 0, 0, 0.85)',
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.36)'
+          }}
+        >
+          <a href="#" style={{ display: 'flex', alignItems: 'center', transition: 'opacity 0.2s', textDecoration: 'none' }}>
+            <img src="/_Assets/Icon set.svg" alt="ENM" style={{ height: '22px', width: 'auto' }} />
+          </a>
+
+          <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+            <a href="#sobre" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.75)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase', transition: 'color 0.2s' }}>A ESCOLA</a>
+            <a href="#solucoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.75)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase', transition: 'color 0.2s' }}>FORMATOS</a>
+            <a href="#imersoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.75)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase', transition: 'color 0.2s' }}>PRÓXIMAS IMERSÕES</a>
           </div>
-          <a href="#form" className="btn-mint" style={{
-            padding: '8px 18px', borderRadius: '100px', fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', fontWeight: 600,
-            background: 'var(--accent-mint)', color: '#000', textDecoration: 'none', letterSpacing: '0.18em', textTransform: 'uppercase'
-          }}>CONTATO</a>
-        </div>
-      </motion.nav>
+
+          <a
+            href="#form"
+            className="btn-pill-advisor"
+            style={{
+              position: 'relative',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              borderRadius: '9999px',
+              paddingLeft: '20px',
+              paddingRight: '8px',
+              paddingTop: '6px',
+              paddingBottom: '6px',
+              fontFamily: 'var(--arcaffo-font-label)',
+              fontSize: '10.5px',
+              fontWeight: 600,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#000',
+              backgroundColor: 'var(--accent-mint)',
+              textDecoration: 'none',
+              transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+              minHeight: '40px'
+            }}
+          >
+            <span>CONTATO</span>
+            <span style={{
+              width: '28px',
+              height: '28px',
+              borderRadius: '9999px',
+              backgroundColor: 'rgba(0, 0, 0, 0.15)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'all 0.3s'
+            }}>
+              <svg
+                aria-hidden="true"
+                style={{ width: '14px', height: '14px', transition: 'transform 0.3s' }}
+                className="btn-pill-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </span>
+          </a>
+        </motion.nav>
+      </div>
 
       {/* Hero Section */}
       <section style={{
         minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
         background: 'url(/_Assets/Hero.jpg) center/cover no-repeat', position: 'relative',
-        textAlign: 'center', overflow: 'hidden', padding: '100px 0'
+        textAlign: 'center', overflow: 'hidden', padding: '120px 0 100px'
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), #000 95%)', zIndex: 1 }} />
-        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+        {/* Ambient Mint Gradient Blobs & Grain Overlay (Advisor standard) */}
+        <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 1 }}>
+          <span className="gradient-blob-a" style={{ position: 'absolute', inset: 0 }} />
+          <span className="gradient-blob-b" style={{ position: 'absolute', inset: 0 }} />
+          <span className="gradient-blob-c" style={{ position: 'absolute', inset: 0 }} />
+          <div className="grain" style={{ position: 'absolute', inset: 0, opacity: 0.12 }} />
+        </div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.65), #000 95%)', zIndex: 2 }} />
+        <div className="container" style={{ position: 'relative', zIndex: 3 }}>
           <FadeIn y={30}>
             <span style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent-mint)', display: 'block', marginBottom: '20px', fontWeight: 500 }}>
               Arcaffo Group apresenta
@@ -455,16 +515,20 @@ const App = () => {
             <p className="section-subtitle form-section-subtitle">
               Seja para uma imersão presencial ou um treinamento para sua equipe, preencha os dados e nosso time entrará em contato.
             </p>
-            <div className="glass form-panel">
-              <ArcaffoForm />
+            <div className="glass form-panel" style={{ position: 'relative', overflow: 'hidden' }}>
+              <div className="grain" style={{ position: 'absolute', inset: 0, opacity: 0.10, pointerEvents: 'none' }} />
+              <div style={{ position: 'relative', zIndex: 1 }}>
+                <ArcaffoForm />
+              </div>
             </div>
           </FadeIn>
         </div>
       </Section>
 
       {/* Footer */}
-      <footer style={{ padding: '64px 0 32px', background: '#000', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '32px' }}>
+      <footer style={{ position: 'relative', overflow: 'hidden', padding: '64px 0 32px', background: '#000', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+        <div className="grain" style={{ position: 'absolute', inset: 0, opacity: 0.10, pointerEvents: 'none' }} />
+        <div className="container" style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '32px' }}>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
             <img src="/_Assets/Layer_1.svg" alt="Arcaffo" style={{ height: '20px', opacity: 0.3 }} />
             <div style={{ width: '1px', height: '16px', background: 'rgba(255,255,255,0.1)', display: 'none' }} />
