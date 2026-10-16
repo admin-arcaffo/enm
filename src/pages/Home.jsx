@@ -221,77 +221,42 @@ const App = () => {
       </div>
 
       {/* Floating Capsule Navbar (Advisor standard) */}
-      <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000, padding: '12px 16px 0', pointerEvents: 'none' }}>
+      <div className="navbar-floating-wrapper">
         <motion.nav
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          style={{
-            pointerEvents: 'auto',
-            maxWidth: '1280px',
-            margin: '0 auto',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            padding: '10px 24px',
-            borderRadius: '9999px',
-            background: 'rgba(0, 0, 0, 0.85)',
-            backdropFilter: 'blur(20px)',
-            WebkitBackdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.36)'
-          }}
+          className="navbar-capsule"
         >
-          <a href="#" style={{ display: 'flex', alignItems: 'center', transition: 'opacity 0.2s', textDecoration: 'none' }}>
-            <img src="/_Assets/Icon set.svg" alt="ENM" style={{ height: '22px', width: 'auto' }} />
+          <a
+            href="#"
+            aria-label="Voltar ao início"
+            style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', transition: 'opacity 0.2s' }}
+          >
+            <img
+              src="/brand/enm-menu-logo.svg"
+              alt="Escola de Negócios e Marcas"
+              width={114}
+              height={33}
+              className="navbar-brand-logo"
+            />
           </a>
 
-          <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-            <a href="#sobre" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.75)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase', transition: 'color 0.2s' }}>A ESCOLA</a>
-            <a href="#solucoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.75)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase', transition: 'color 0.2s' }}>FORMATOS</a>
-            <a href="#imersoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.75)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase', transition: 'color 0.2s' }}>PRÓXIMAS IMERSÕES</a>
+          <div className="navbar-nav-links">
+            <a href="#sobre" className="navbar-link-item">A ESCOLA</a>
+            <a href="#solucoes" className="navbar-link-item">FORMATOS</a>
+            <a href="#imersoes" className="navbar-link-item">PRÓXIMAS IMERSÕES</a>
           </div>
 
           <a
             href="#form"
-            className="btn-pill-advisor"
-            style={{
-              position: 'relative',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '10px',
-              borderRadius: '9999px',
-              paddingLeft: '20px',
-              paddingRight: '8px',
-              paddingTop: '6px',
-              paddingBottom: '6px',
-              fontFamily: 'var(--arcaffo-font-label)',
-              fontSize: '10.5px',
-              fontWeight: 600,
-              letterSpacing: '0.18em',
-              textTransform: 'uppercase',
-              color: '#000',
-              backgroundColor: 'var(--accent-mint)',
-              textDecoration: 'none',
-              transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-              minHeight: '40px'
-            }}
+            className="navbar-cta-pill"
           >
             <span>CONTATO</span>
-            <span style={{
-              width: '28px',
-              height: '28px',
-              borderRadius: '9999px',
-              backgroundColor: 'rgba(0, 0, 0, 0.15)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              transition: 'all 0.3s'
-            }}>
+            <span className="navbar-cta-icon-badge">
               <svg
                 aria-hidden="true"
-                style={{ width: '14px', height: '14px', transition: 'transform 0.3s' }}
-                className="btn-pill-arrow"
+                className="navbar-cta-icon"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
