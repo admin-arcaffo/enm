@@ -33,11 +33,11 @@ const Obrigado = () => {
           <CheckCircle size={80} strokeWidth={1.5} />
         </div>
 
-        <h1 style={{ fontSize: 'clamp(32px, 5vw, 56px)', marginBottom: '24px', lineHeight: '1.1' }}>
-          Aplicação <br /><span style={{ color: 'var(--accent-mint)', fontStyle: 'italic', fontWeight: 200 }}>Recebida!</span>
+        <h1 style={{ fontFamily: 'var(--arcaffo-font-display)', fontSize: 'clamp(36px, 6vw, 64px)', marginBottom: '24px', lineHeight: '0.92', letterSpacing: '-0.01em', fontWeight: 100, textTransform: 'uppercase' }}>
+          Aplicação <br /><em style={{ fontFamily: 'var(--arcaffo-font-display)', color: 'var(--accent-mint)', fontStyle: 'italic', fontWeight: 100, textTransform: 'uppercase', letterSpacing: '-0.01em' }}>Recebida!</em>
         </h1>
 
-        <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.5)', lineHeight: '1.6', marginBottom: '48px', fontWeight: 300 }}>
+        <p style={{ fontFamily: 'var(--arcaffo-font-body)', fontSize: '17px', color: 'rgba(255,255,255,0.7)', lineHeight: '1.65', maxWidth: '54ch', margin: '0 auto 48px', fontWeight: 400 }}>
           Obrigado por seu interesse na ENM. Nosso time de estrategistas entrará em contato em breve para os próximos passos.
         </p>
 

@@ -1,0 +1,24 @@
+/* Span Font Family (self-hosted) */
+@font-face{font-family:"Span";src:url("/fonts/Span-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-ThinItalic.otf") format("opentype");font-weight:100;font-style:italic;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-Semibold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-SemiboldItalic.otf") format("opentype");font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:"Span";src:url("/fonts/Span-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-ThinItalic.otf") format("opentype");font-weight:100;font-style:italic;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-RegularItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-Semibold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-SemiboldItalic.otf") format("opentype");font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Span Condensed";src:url("/fonts/SpanCondensed-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+
+@font-face{font-family:"Span Compressed";src:url("/fonts/SpanCompressed-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"Span Compressed";src:url("/fonts/SpanCompressed-ThinItalic.otf") format("opentype");font-weight:100;font-style:italic;font-display:swap}
+@font-face{font-family:"Span Compressed";src:url("/fonts/SpanCompressed-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}

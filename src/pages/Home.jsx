@@ -237,15 +237,15 @@ const App = () => {
             <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
               <div style={{ width: '1px', height: '16px', background: 'rgba(255,255,255,0.1)' }} />
               <div style={{ display: 'flex', gap: '20px' }}>
-                <a href="#sobre" style={{ fontSize: '10px', letterSpacing: '1px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontWeight: 600 }}>A ESCOLA</a>
-                <a href="#solucoes" style={{ fontSize: '10px', letterSpacing: '1px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontWeight: 600 }}>FORMATOS</a>
-                <a href="#imersoes" style={{ fontSize: '10px', letterSpacing: '1px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontWeight: 600 }}>PRÓXIMAS IMERSÕES</a>
+                <a href="#sobre" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase' }}>A ESCOLA</a>
+                <a href="#solucoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase' }}>FORMATOS</a>
+                <a href="#imersoes" style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontWeight: 500, textTransform: 'uppercase' }}>PRÓXIMAS IMERSÕES</a>
               </div>
             </div>
           </div>
           <a href="#form" className="btn-mint" style={{
-            padding: '8px 18px', borderRadius: '100px', fontSize: '10px', fontWeight: 700,
-            background: 'var(--accent-mint)', color: '#000', textDecoration: 'none', letterSpacing: '0.5px'
+            padding: '8px 18px', borderRadius: '100px', fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', fontWeight: 600,
+            background: 'var(--accent-mint)', color: '#000', textDecoration: 'none', letterSpacing: '0.18em', textTransform: 'uppercase'
           }}>CONTATO</a>
         </div>
       </motion.nav>
@@ -259,15 +259,15 @@ const App = () => {
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), #000 95%)', zIndex: 1 }} />
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <FadeIn y={30}>
-            <span style={{ fontSize: 'clamp(10px, 2vw, 12px)', letterSpacing: '4px', textTransform: 'uppercase', color: 'var(--accent-mint)', display: 'block', marginBottom: '20px', fontWeight: 600 }}>
+            <span style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent-mint)', display: 'block', marginBottom: '20px', fontWeight: 500 }}>
               Arcaffo Group apresenta
             </span>
-            <h1 style={{ fontSize: 'clamp(40px, 10vw, 110px)', lineHeight: '0.9', letterSpacing: '-0.04em', marginBottom: '32px' }}>
+            <h1 style={{ fontFamily: 'var(--arcaffo-font-display)', fontSize: 'clamp(44px, 10vw, 110px)', lineHeight: '0.92', letterSpacing: '-0.01em', fontWeight: 100, textTransform: 'uppercase', marginBottom: '32px' }}>
               INTELIGÊNCIA <br />
-              <span style={{ color: 'var(--accent-mint)', fontStyle: 'italic', fontWeight: 200 }}>ESTRATÉGICA</span> <br />
+              <em style={{ fontFamily: 'var(--arcaffo-font-display)', color: 'var(--accent-mint)', fontStyle: 'italic', fontWeight: 100, textTransform: 'uppercase', letterSpacing: '-0.01em' }}>ESTRATÉGICA</em> <br />
               PARA MARCAS.
             </h1>
-            <p style={{ fontSize: 'clamp(16px, 3vw, 22px)', color: 'rgba(255,255,255,0.6)', maxWidth: '650px', margin: '0 auto 40px', fontWeight: 300, lineHeight: '1.5' }}>
+            <p style={{ fontFamily: 'var(--arcaffo-font-body)', fontSize: 'clamp(16px, 2.5vw, 18px)', color: 'rgba(255,255,255,0.7)', maxWidth: '54ch', margin: '0 auto 40px', fontWeight: 400, lineHeight: '1.65' }}>
               Ensinamos empresários a construir ativos de branding inegociáveis, eliminando a dependência de agências e assumindo o controle da própria narrativa.
             </p>
             <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -282,21 +282,21 @@ const App = () => {
       <Section id="sobre">
         <div className="grid-2" style={{ alignItems: 'center' }}>
           <FadeIn>
-            <h2 style={{ fontSize: 'clamp(32px, 6vw, 56px)', lineHeight: '1.1', marginBottom: '32px' }}>
+            <h2 style={{ fontFamily: 'var(--arcaffo-font-display)', fontSize: 'clamp(32px, 6vw, 64px)', lineHeight: '0.92', letterSpacing: '-0.01em', fontWeight: 100, textTransform: 'uppercase', marginBottom: '32px' }}>
               O mercado te ensinou a <span style={{ color: 'rgba(255,255,255,0.3)' }}>delegar sua alma.</span> <br />
-              Nós te ensinamos a <br /><span style={{ fontStyle: 'italic' }}>ser o dono dela.</span>
+              Nós te ensinamos a <br /><em style={{ fontFamily: 'var(--arcaffo-font-display)', fontStyle: 'italic', fontWeight: 100, textTransform: 'uppercase' }}>ser o dono dela.</em>
             </h2>
-            <p style={{ fontSize: 'clamp(16px, 2.5vw, 18px)', color: 'rgba(255,255,255,0.5)', lineHeight: '1.7', fontWeight: 300, marginBottom: '40px' }}>
+            <p style={{ fontFamily: 'var(--arcaffo-font-body)', fontSize: 'clamp(15px, 2vw, 17px)', color: 'rgba(255,255,255,0.6)', lineHeight: '1.65', maxWidth: '54ch', fontWeight: 400, marginBottom: '40px' }}>
               A Escola de Negócios & Marcas é o braço educacional da Arcaffo. Aqui, a teoria encontra a trincheira. Não entregamos fórmulas prontas, mas sim a capacidade analítica e estratégica para que sua marca seja uma potência cultural e comercial.
             </p>
-            <div style={{ display: 'flex', gap: '40px' }}>
+            <div style={{ display: 'flex', gap: '48px' }}>
               <div>
-                <h4 style={{ color: 'var(--accent-mint)', fontSize: 'clamp(24px, 4vw, 32px)', marginBottom: '4px' }}>+500</h4>
-                <p style={{ fontSize: '10px', letterSpacing: '1px', opacity: 0.4, fontWeight: 600 }}>LÍDERES TREINADOS</p>
+                <div className="stat-number" style={{ fontFamily: 'var(--arcaffo-font-display)', color: 'var(--accent-mint)', fontSize: 'clamp(48px, 6vw, 72px)', lineHeight: '0.92', letterSpacing: '-0.01em', fontWeight: 100, marginBottom: '6px' }}>+500</div>
+                <p style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', fontWeight: 500, textTransform: 'uppercase' }}>LÍDERES TREINADOS</p>
               </div>
               <div>
-                <h4 style={{ color: 'var(--accent-mint)', fontSize: 'clamp(24px, 4vw, 32px)', marginBottom: '4px' }}>98%</h4>
-                <p style={{ fontSize: '10px', letterSpacing: '1px', opacity: 0.4, fontWeight: 600 }}>SATISFAÇÃO (NPS)</p>
+                <div className="stat-number" style={{ fontFamily: 'var(--arcaffo-font-display)', color: 'var(--accent-mint)', fontSize: 'clamp(48px, 6vw, 72px)', lineHeight: '0.92', letterSpacing: '-0.01em', fontWeight: 100, marginBottom: '6px' }}>98%</div>
+                <p style={{ fontFamily: 'var(--arcaffo-font-label)', fontSize: '10.5px', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.6)', fontWeight: 500, textTransform: 'uppercase' }}>SATISFAÇÃO (NPS)</p>
               </div>
             </div>
           </FadeIn>
@@ -312,8 +312,8 @@ const App = () => {
       <Section id="solucoes" style={{ background: '#050505' }}>
         <div style={{ textAlign: 'center', marginBottom: '64px' }}>
           <FadeIn>
-            <h2 className="section-title">Formatos de <span style={{ color: 'var(--accent-mint)' }}>Avanço</span></h2>
-            <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: 'clamp(16px, 3vw, 18px)', maxWidth: '600px', margin: '0 auto' }}>Escolha como a inteligência Arcaffo deve entrar no seu negócio.</p>
+            <h2 className="section-title">Formatos de <em style={{ color: 'var(--accent-mint)', fontStyle: 'italic', fontWeight: 100, textTransform: 'uppercase', fontFamily: 'var(--arcaffo-font-display)' }}>Avanço</em></h2>
+            <p style={{ fontFamily: 'var(--arcaffo-font-body)', color: 'rgba(255,255,255,0.6)', fontSize: 'clamp(15px, 2.5vw, 17px)', maxWidth: '54ch', margin: '0 auto', lineHeight: '1.65' }}>Escolha como a inteligência Arcaffo deve entrar no seu negócio.</p>
           </FadeIn>
         </div>
 
@@ -324,8 +324,8 @@ const App = () => {
               background: 'rgba(255,255,255,0.01)', borderRadius: '32px'
             }}>
               <Calendar size={32} color="var(--accent-mint)" style={{ marginBottom: '24px' }} />
-              <h3 style={{ fontSize: 'clamp(24px, 4vw, 32px)', marginBottom: '20px' }}>Imersões Presenciais</h3>
-              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '16px', lineHeight: '1.6', marginBottom: '32px', flexGrow: 1 }}>
+              <h3 style={{ fontFamily: 'var(--arcaffo-font-headline)', fontSize: 'clamp(24px, 3.5vw, 32px)', lineHeight: '1', letterSpacing: '-0.03em', textTransform: 'uppercase', fontWeight: 300, marginBottom: '20px' }}>Imersões Presenciais</h3>
+              <p style={{ fontFamily: 'var(--arcaffo-font-body)', color: 'rgba(255,255,255,0.6)', fontSize: '15px', lineHeight: '1.65', marginBottom: '32px', flexGrow: 1 }}>
                 Encontros intensivos em ambientes selecionados. Ideal para empresários e líderes que buscam profundidade estratégica, network de alto nível e uma pausa necessária para pensar o futuro do negócio.
               </p>
               <ul style={{ listStyle: 'none', marginBottom: '32px' }}>
@@ -345,8 +345,8 @@ const App = () => {
               background: 'rgba(255,255,255,0.01)', borderRadius: '32px'
             }}>
               <Building2 size={32} color="var(--accent-mint)" style={{ marginBottom: '24px' }} />
-              <h3 style={{ fontSize: 'clamp(24px, 4vw, 32px)', marginBottom: '20px' }}>Treinamento In Company</h3>
-              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '16px', lineHeight: '1.6', marginBottom: '32px', flexGrow: 1 }}>
+              <h3 style={{ fontFamily: 'var(--arcaffo-font-headline)', fontSize: 'clamp(24px, 3.5vw, 32px)', lineHeight: '1', letterSpacing: '-0.03em', textTransform: 'uppercase', fontWeight: 300, marginBottom: '20px' }}>Treinamento In Company</h3>
+              <p style={{ fontFamily: 'var(--arcaffo-font-body)', color: 'rgba(255,255,255,0.6)', fontSize: '15px', lineHeight: '1.65', marginBottom: '32px', flexGrow: 1 }}>
                 Levamos a nossa metodologia para dentro da sua empresa. Customizamos o treinamento para os desafios específicos da sua equipe de marketing, branding e diretoria.
               </p>
               <ul style={{ listStyle: 'none', marginBottom: '32px' }}>
@@ -366,8 +366,8 @@ const App = () => {
       <Section id="imersoes">
         <div style={{ textAlign: 'center', marginBottom: '64px' }}>
           <FadeIn>
-            <h2 className="section-title">Próximas <span style={{ color: 'var(--accent-mint)' }}>Imersões</span></h2>
-            <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: 'clamp(16px, 3vw, 18px)', maxWidth: '600px', margin: '0 auto' }}>Garanta sua vaga nos próximos encontros presenciais.</p>
+            <h2 className="section-title">Próximas <em style={{ color: 'var(--accent-mint)', fontStyle: 'italic', fontWeight: 100, textTransform: 'uppercase', fontFamily: 'var(--arcaffo-font-display)' }}>Imersões</em></h2>
+            <p style={{ fontFamily: 'var(--arcaffo-font-body)', color: 'rgba(255,255,255,0.6)', fontSize: 'clamp(15px, 2.5vw, 17px)', maxWidth: '54ch', margin: '0 auto', lineHeight: '1.65' }}>Garanta sua vaga nos próximos encontros presenciais.</p>
           </FadeIn>
         </div>
         <FadeIn delay={0.2}>
@@ -381,7 +381,7 @@ const App = () => {
       <Section id="galeria" style={{ overflow: 'hidden', paddingBottom: '0' }}>
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
           <FadeIn>
-            <h2 className="section-title">A <span style={{ fontStyle: 'italic', fontWeight: 200 }}>Experiência</span></h2>
+            <h2 className="section-title">A <em style={{ fontStyle: 'italic', fontWeight: 100, textTransform: 'uppercase', fontFamily: 'var(--arcaffo-font-display)' }}>Experiência</em></h2>
           </FadeIn>
         </div>
         <FadeIn delay={0.2}>
@@ -412,7 +412,7 @@ const App = () => {
         <div className="grid-2" style={{ gap: '60px' }}>
           <FadeIn>
             <div style={{ padding: '32px', borderLeft: '1px solid var(--accent-mint)' }}>
-              <h3 style={{ fontSize: 'clamp(20px, 4vw, 28px)', marginBottom: '32px' }}>Isso é para você se:</h3>
+              <h3 style={{ fontFamily: 'var(--arcaffo-font-headline)', fontSize: 'clamp(20px, 3vw, 24px)', lineHeight: '1', letterSpacing: '-0.03em', textTransform: 'uppercase', fontWeight: 300, marginBottom: '32px' }}>Isso é para você se:</h3>
               <ul style={{ listStyle: 'none' }}>
                 {[
                   "Você é o dono do negócio e sente que a marca perdeu a alma",
@@ -420,7 +420,7 @@ const App = () => {
                   "Você gasta muito com agências e tem pouco resultado real",
                   "Você quer que sua marca seja uma autoridade inquestionável"
                 ].map((txt, i) => (
-                  <li key={i} style={{ display: 'flex', gap: '12px', marginBottom: '20px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4', fontSize: '14px' }}>
+                  <li key={i} style={{ display: 'flex', gap: '12px', marginBottom: '20px', color: 'rgba(255,255,255,0.7)', lineHeight: '1.5', fontSize: '14px' }}>
                     <ChevronRight size={16} color="var(--accent-mint)" style={{ marginTop: '2px' }} /> {txt}
                   </li>
                 ))}
@@ -429,7 +429,7 @@ const App = () => {
           </FadeIn>
           <FadeIn delay={0.2}>
             <div style={{ padding: '32px', borderLeft: '1px solid rgba(255,255,255,0.1)' }}>
-              <h3 style={{ fontSize: 'clamp(20px, 4vw, 28px)', marginBottom: '32px', color: 'rgba(255,255,255,0.3)' }}>Não é para você se:</h3>
+              <h3 style={{ fontFamily: 'var(--arcaffo-font-headline)', fontSize: 'clamp(20px, 3vw, 24px)', lineHeight: '1', letterSpacing: '-0.03em', textTransform: 'uppercase', fontWeight: 300, marginBottom: '32px', color: 'rgba(255,255,255,0.4)' }}>Não é para você se:</h3>
               <ul style={{ listStyle: 'none' }}>
                 {[
                   "Você busca hacks de tráfego pago ou fórmulas mágicas",
@@ -437,7 +437,7 @@ const App = () => {
                   "Você prefere delegar a inteligência para terceiros",
                   "Você acredita que branding é apenas um logotipo bonito"
                 ].map((txt, i) => (
-                  <li key={i} style={{ display: 'flex', gap: '12px', marginBottom: '20px', color: 'rgba(255,255,255,0.3)', lineHeight: '1.4', fontSize: '14px' }}>
+                  <li key={i} style={{ display: 'flex', gap: '12px', marginBottom: '20px', color: 'rgba(255,255,255,0.4)', lineHeight: '1.5', fontSize: '14px' }}>
                     <X size={16} color="rgba(255,255,255,0.2)" style={{ marginTop: '2px' }} /> {txt}
                   </li>
                 ))}
